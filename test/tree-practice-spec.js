@@ -402,6 +402,11 @@ describe('Binary Tree Practice', () => {
       deleteNodeBST(bstRoot, 5);
       deleteNodeBST(bstRoot, 6);
       expect(bstRoot.right.val).to.equal(7);
+      //      4
+      //    /   \
+      //   2     6
+      //  / \   / \
+      // 1   3 5   7
       expect(bstRoot.right.left).to.equal(null);
       expect(bstRoot.right.right).to.equal(null);
 
